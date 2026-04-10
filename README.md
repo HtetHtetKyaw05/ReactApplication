@@ -1,61 +1,81 @@
-# 👋 Hello developer!
+# Form Tutorial App
 
-This is one of the many templates available from W3Schools. Check our [tutorials for frontend development](https://www.w3schools.com/where_to_start.asp) to learn the basics of [HTML](https://www.w3schools.com/html/default.asp), [CSS](https://www.w3schools.com/css/default.asp) and [JavaScript](https://www.w3schools.com/js/default.asp). 🦄
+シンプルな入力フォームアプリです。  
+ユーザー情報（名前・メール・場所）を入力して一覧表示できます。
 
-This project serves as an example of what can be achieved. It is not a fully functional product. Feel free to use the source code and ideas as a starting point for your own projects.
+---
 
-## Knowledge requirements
+## 機能
 
-To be able to fully understand and modify this template to your needs, there are several things you should know (or learn):
+- 入力フォーム（名前 / Email / 場所）
+- 入力データの一覧表示
+- フォーム送信時のバリデーション（未入力チェック）
+- テーブル形式でのデータ表示
 
-- [HTML](https://www.w3schools.com/html/default.asp)
-- [CSS](https://www.w3schools.com/css/default.asp)
-- [JavaScript](https://www.w3schools.com/js/default.asp)
-- [React](https://reactjs.org/)
-- [Node.js](https://www.w3schools.com/nodejs/default.asp)
-- [Express.js](https://expressjs.com/)
+---
 
-## 🔨 What's next?
+## 使用技術
 
-Customize this template to make it your own.  
-Remember to make your layout responsive - if you want your site to look good on smaller screens like mobile.
+- React
+- useState（状態管理）
+- JSX
 
-## 🎨 Where to find everything?
+---
 
-This template is made by using several technologies.  
-Below are explanations about where to find specific code.
+## 画面イメージ
 
-### Root HTML
+- 入力フォーム（テーブル形式）
+- データ一覧テーブル
 
-There are only one important HTML file in this project which is the base page around the application. It is a bit different from a default React project as you can find the skeleton HTML `index.html` in the root folder instead of `public`.
+---
 
-### CSS and images
+## 使い方
 
-You can find the CSS for the application in `src/client/app.css`.
+1. 名前・Email・場所を入力
+2. 「追加」ボタンをクリック
+3. 入力したデータが下の一覧に表示される
 
-### Application
+---
 
-You can find the core frontend React application in `src/client`. Here you have a normal React setup with `index.js` as the glue that pieces the `.jsx` components together. You will have to know React to use this template.
+#  Habit Tracker
 
-### Backend
+シンプルな習慣管理アプリです。 
+日々の習慣を記録し、ストリーク（連続日数）を確認できます。
 
-The backend logic is located under `src/server`. `src/server/index.js` is the main file handling the APIs. 
+---
 
-### Database
+## 機能
 
-Dynamic spaces can use [SQLite](https://www.sqlite.org/docs.html) database.  
-The database file is called `database.db`. It is placed inside the `w3s-dynamic-storage` folder.  
-SQLite connection path to the database is `w3s-dynamic-storage/database.db` which you can use to connect to the SQLite database programmatically.   
+- 習慣の追加
+- 習慣の削除
+- 完了チェック（チェックボックス）
+- ストリーク（連続日数）の表示
+- localStorageによるデータ保存(リロードしても消えない)
 
----  
-**Do not change the `w3s-dynamic-storage` folder name or `database.db` file name!**  
-**By changing the `w3s-dynamic-storage` folder name or `database.db` file name, you risk the space not working properly.**
+---
 
-## 🔨 Please note
-For now, files created/uploaded or edited from within the terminal view will not be backed up or synced. 
+## 使用技術
 
-## ⛑ Need support?
-[Join our Discord community](https://discord.gg/6Z7UaRbUQM) and ask questions in the **#spaces-general** channel to get your space on the next level.  
-[Send us a ticket](https://support.w3schools.com/hc/en-gb) if you have any technical issues with Spaces.
+- React
+- useState（状態管理）
+- useEffect（副作用）
+- localStorage
 
-Happy learning!
+---
+
+## 画面イメージ
+
+- 習慣入力フォーム
+- 習慣一覧テーブル
+- チェックボックスで完了管理
+
+---
+
+## 使い方
+
+1. 習慣を入力
+2. 「追加」ボタンをクリック
+3. チェックボックスで今日の完了を記録
+4. ストリークが自動で更新される
+
+---
