@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import Tutorials from './Tutorials';
 import FormTutorial from './FormTutorial';
 import HabitTracker from './HabitTracker';
+import App from './movieApp'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -26,6 +27,10 @@ ReactDOM.render(
             <Link to = "/habit" style = {{ margin : "5px"}}>
               <button>HabitTracker</button>
             </Link>
+
+            <Link to = "/movieApp" style = {{ margin : "5px"}}>
+              <button>movieApp</button>
+            </Link>
           </nav>
 
           {/* 画面切り替え */}
@@ -34,6 +39,7 @@ ReactDOM.render(
             <Route path='/tutorials' element={<Tutorials />} />
             <Route path='/form' element={<FormTutorial />} />
             <Route path='/habit' element={<HabitTracker />} />
+            <Route path='/movieApp' element={<App />} />
             <Route path='*' element={<main style={{ padding: '1rem' }}>
                   <p>There&apos;s nothing here! </p>
                   <h2>Click button!</h2>
