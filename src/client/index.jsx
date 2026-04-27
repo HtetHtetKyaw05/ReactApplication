@@ -32,13 +32,14 @@ ReactDOM.render(
               <button>movieApp</button>
             </Link>
           </nav>
-          <div id="body">
-            <h1>This is HOME!!</h1>
-          </div>
 
           {/* 画面切り替え */}
           <Routes>
-            <Route path='/' />
+            <Route path='/' element={<main style={{ padding: '1rem' }}>
+                  <h1>This is HOME!!</h1>
+                  <h2>Click button!</h2>
+                </main>
+            }/>
             <Route path='/tutorials' element={<Tutorials />} />
             <Route path='/form' element={<FormTutorial />} />
             <Route path='/habit' element={<HabitTracker />} />
