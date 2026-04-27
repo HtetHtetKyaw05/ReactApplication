@@ -32,6 +32,9 @@ ReactDOM.render(
               <button>movieApp</button>
             </Link>
           </nav>
+          <div id="body">
+            <h1>This is HOME!!</h1>
+          </div>
 
           {/* 画面切り替え */}
           <Routes>
